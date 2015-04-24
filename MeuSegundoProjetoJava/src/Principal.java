@@ -1,5 +1,6 @@
 
 import br.edu.utfpr.controller.ModificadoresAcesso;
+import br.edu.utfpr.entity.Carro;
 import br.edu.utfpr.entity.Livro;
 import br.edu.utfpr.entity.Quadrado;
 import java.text.DateFormat;
@@ -116,13 +117,17 @@ public class Principal {
     }
     
     private static void solicitarValorJOptionPainel() {
-        String nome = "";
-        String mensagem = "";
+        String nome = ""; // Armazena o nome informado pelo usuário
+        String mensagem = ""; // Armazena a montagem da mensagem que será apresentada para o usuário
         
+        // Solicita ao usuário que informa um valor do tipo texto
+        // Todo valor retornado do método "showInputDialog" é do tipo texto caso queria solicitar número deve ser convertido para o tipo númerico desejado
         nome = JOptionPane.showInputDialog("Informe seu nome");
         
+        // Montangem da mensagem de apresentação ao usuário
         mensagem = "Seu nome é " + nome;
         
+        // Apresentação da mensagem ao usuário
         JOptionPane.showMessageDialog(null, mensagem);
     }
 
@@ -216,31 +221,40 @@ public class Principal {
     }
     
     private static void operadoresIncrementoDecremento() {
-        int i = 10;
-        int j = 3;
-        int k = 0;
-        k = ++j + i; //resultará em k = 4+10 = 14
+        int i = 10; // Inicializa uma variável com valor 10
+        int j = 3; // Inicializa uma variável com valor 3
+        int k = 0; // Inicializa uma variável com valor 0
         
+        k = ++j + i; // Resultará em k = 4+10 = 14
+        
+        // Apresenta o valor armazenado na variável j
         System.out.println("O valor de j é: " + j);
+        
+        // Apresenta o valor armazenado na variável k
         System.out.println("O valor de k é: " + k);
         
-        k = j++ + i; //resultará em k = 3+10 = 13
+        k = j++ + i; // Resultará em k = 3+10 = 13
         
+        // Apresenta o valor armazenado na variável j
         System.out.println("O valor de j é: " + j);
+        
+        // Apresenta o valor armazenado na variável k
         System.out.println("O valor de k é: " + k);
         
-        k++;
+        k++; // Atribui para a variável k o valor dela + 1
+        
+        // Apresenta o valor armazenado na variável k
         System.out.println("O valor de k é: " + k);
     }
     
     private static void castingVariavel() {
-        String textoNumerico = "123";
-        int numeroConvertido = 0;
-        String texto = "";
-        double numeroPontoFlutuante = 0;
-        int numeroInteroComoPontoFlutuante = 0;
+        String textoNumerico = "123"; // Armazena em uma variável do tipo texto um valor numérico
+        int numeroConvertido = 0; // Aramzena o valor numérico convertido
+        String texto = ""; // Armazena um texto
+        double numeroPontoFlutuante = 0; // Armazena um número do tipo ponto flutuante
+        int numeroInteroComoPontoFlutuante = 0; // Armazena um número inteiro convertido de um ponto flutuante
         
-        // Transforam o texto numérico para o tipo de variável númerico
+        // Transforma o texto numérico para o tipo de variável númerico
         numeroConvertido = Integer.parseInt(textoNumerico);
         
         // Apresenta o valor da variável numeroConvertido

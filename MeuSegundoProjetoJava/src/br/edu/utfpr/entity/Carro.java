@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package br.edu.utfpr.entity;
 
 /**
  *
  * @author root
  */
-public class Carro 
-{
+public class Carro {
+    
     private String marca;
     private int ano;
     private String modelo;
@@ -58,15 +59,5 @@ public class Carro
         //
     }
     
+    
 }
-
-
-
-
-
-
-
-
-
-
-
