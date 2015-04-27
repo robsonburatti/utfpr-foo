@@ -5,6 +5,8 @@
  */
 package br.edu.utfpr.basico;
 
+import br.edu.utfpr.util.MyDateFormat;
+
 /**
  *
  * @author root
@@ -16,7 +18,7 @@ public class SobreposicaoMetodos {
      */
     public static void main(String[] args) {
         int valorInteiro = 10; // Atribui o valor 10 para uma variável do tipo inteiro
-        String valorTexto = "10"; // Atribui o valor 10 como texto para uma variável to tipo texto
+        String valorTexto = "20"; // Atribui o valor 10 como texto para uma variável to tipo texto
         double valorResultadoDouble = 0; // Variável que armazena o resultado do processamento do retorno dos métodos polimorficos em um tipo de ponto flutuante
         
         // Atribui para a variável do tipo ponto flutuante o valor calculado pelo método polimorfico que recebe um valor do tipo inteiro
@@ -36,6 +38,8 @@ public class SobreposicaoMetodos {
         
         // Apresenta a mensagem do valor do resultado do processamento do método polimorfico que recebe por parâmetro dois valores um do tipo inteiro e outro do tipo texto
         System.out.println("Valor da variável \"valorResultadoDouble\" após retorno do método que recebe um valor inteiro e um texto: " + valorResultadoDouble);
+        
+        System.out.println("Data atual: " + MyDateFormat.dateFormat("dd-MM-yyyy"));
         
     }
 
