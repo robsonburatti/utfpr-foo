@@ -17,6 +17,28 @@ public class Cliente extends Pessoa {
     private int idade;
     private Date dataNascimento;
 
+    /**
+     * Construtor que aguarda um parâmetro do tipo texto para atribuir o valor ao atributo <b>nome</b> herdado da superclasse Pessoa
+     * @param nome valor do tipo texto para armazenar o valor do atributo <b>nome</b> da superclasse Pessoa
+     */
+    public Cliente(String nome) {
+        // Chama o construtor da superclasse Pessoa que aguarda um parâmetro do tipo texto para atribuir para o atributo nome
+        super(nome);
+    }
+
+    /**
+     * Construtor que aguarda um parâmetro do tipo texto para atribuir o valor ao atributo <b>nome</b> herdado da superclasse Pessoa e outro um valor numérico para atribuir ao atributo <b>idade</b> da subclasse Cliente
+     * @param nome valor do tipo texto para armazenar o valor do atributo <b>nome</b> da superclasse Pessoa
+     * @param idade valor do tipo numérico para armazenar o valor do atributo <b>idade</b> da subclasse Cliente
+     */
+    public Cliente(String nome, int idade) {
+        // Chama o construtor da superclasse Pessoa que aguarda um parâmetro do tipo texto para atribuir para o atributo nome
+        super(nome);
+        
+        // Atribui o valor do parâmetro idade para o atributo idade da subclasse Cliente
+        this.idade = idade;
+    }
+    
     public String getCpf() {
         return cpf;
     }
