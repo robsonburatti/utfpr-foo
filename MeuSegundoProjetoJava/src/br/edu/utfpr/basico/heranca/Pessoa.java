@@ -106,5 +106,5 @@ public class Pessoa {
     public String toString() {
         return "Pessoa{" + "nome=" + nome + ", endereco=" + endereco + ", numero=" + numero + ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + ", telefone=" + telefone + ", email=" + email + '}';
     }
-
+    
 }
