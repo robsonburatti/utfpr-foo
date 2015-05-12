@@ -30,4 +30,6 @@ public class Diretor extends Funcionario {
         return super.getBonificacao() + 1000;
     }
     
+
+    
 }

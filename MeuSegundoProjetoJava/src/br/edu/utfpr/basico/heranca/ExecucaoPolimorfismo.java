@@ -23,6 +23,8 @@ public class ExecucaoPolimorfismo {
         System.out.println("Salário Diretor: " + diretor.getBonificacao());
         System.out.println("Salário Gerente: " + gerente.getBonificacao());
         System.out.println("Salário Secretário: " + secretario.getBonificacao());
+        
+        System.out.println("Valor do toString() = " + diretor.toString());
     }
     
 }

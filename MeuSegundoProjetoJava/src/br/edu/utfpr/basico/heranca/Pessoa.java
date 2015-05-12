@@ -102,9 +102,9 @@ public class Pessoa {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", endereco=" + endereco + ", numero=" + numero + ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + ", telefone=" + telefone + ", email=" + email + '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Pessoa{" + "nome=" + nome + ", endereco=" + endereco + ", numero=" + numero + ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + ", telefone=" + telefone + ", email=" + email + '}';
+//    }
     
 }

@@ -3,26 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.utfpr.basico.heranca;
+package br.edu.utfpr.basico.exemplointerface;
 
 /**
  *
  * @author root
  */
-public class Secretario extends Funcionario {
+public class Circulo extends FormaGeometrica {
 
     @Override
-    public void login(String login, String senha) {
+    public double perimetro() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    /**
-     * Método polimorfico
-     * @return 
-     */
-    @Override
-    public double getBonificacao() {
-        return super.getBonificacao() + 200;
     }
     
 }
