@@ -5,6 +5,7 @@
  */
 package br.edu.utfpr.basico.excecao;
 
+import br.edu.utfpr.util.MyException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,12 +32,30 @@ public class Principal {
 //        }
 //        
 //        System.out.println("Retorno=" + retorno);
-        try {   
-            metodo1();
+//        try {   
+////            metodo1();
+//            divisor2(1,1);
+//        } catch (Exception e) {
+//            System.err.println("Tratou o erro antes.");
+//            // Apresenta qual o pacote seguido da clase 
+//            // seguido da linha que ocorreu o erro
+//            // e também de quais hierarquias de métodos
+//            // ocorreu o erro
+//            e.printStackTrace();
+//            
+//            System.out.println("O erro é: " + e.getMessage());
+//            System.err.println("Tratou o erro depois.");
+//        } finally {
+//            System.out.println("Passou no finaly.");
+//        }
+        
+        try {
+            divisor2(1, 1);
+            divisor2();
+        } catch (MyException e) {
+            e.messageSystem();
         } catch (Exception ex) {
-            System.err.println("Tratou o erro.");
-        } finally {
-            System.out.println("Passou no finaly.");
+            System.out.println("Tratamento com a Classe Exception!");
         }
     }
     
@@ -56,6 +75,10 @@ public class Principal {
     }
     
     public static double divisor2(double valor1, double valor2) throws Exception {
+        return (4/0);
+    }
+    
+    public static double divisor2() throws MyException {
         return (4/0);
     }
     
